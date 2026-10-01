@@ -57,6 +57,12 @@ set ERROR_CODE=0
 @REM To isolate internal variables from possible post scripts, we use another setlocal
 @setlocal
 
+if "%JAVA_HOME%" == "" (
+    if exist "%USERPROFILE%\.vscode\extensions\redhat.java-1.56.0-win32-x64\jre\21.0.12.1-win32-x86_64\bin\java.exe" (
+        set "JAVA_HOME=%USERPROFILE%\.vscode\extensions\redhat.java-1.56.0-win32-x64\jre\21.0.12.1-win32-x86_64"
+    )
+)
+
 @REM ==== START VALIDATION ====
 if not "%JAVA_HOME%" == "" goto OkJHome
 
