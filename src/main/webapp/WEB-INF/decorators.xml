@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/views/decorators">
+    <excludes>
+        <pattern>/assets/*</pattern>
+        <pattern>/static/*</pattern>
+        <pattern>/templates/*</pattern>
+        <pattern>/uploads/*</pattern>
+    </excludes>
+
+    <!-- Admin Decorator -->
+    <decorator name="admin" page="admin_24162109.jsp">
+        <pattern>/admin/*</pattern>
+        <pattern>/admin</pattern>
+    </decorator>
+
+    <!-- Web / User Decorator -->
+    <decorator name="web" page="web_24162109.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+</decorators>

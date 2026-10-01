@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-container": "#988300", "surface-dim": "#dcd9dd", "tertiary": "#000000", "surface-container": "#f0edf1", "on-surface": "#1b1b1e", "on-primary-container": "#858386", "on-error-container": "#93000a", "surface-variant": "#e4e1e6", "tertiary-container": "#211b00", "primary-fixed": "#e5e1e4", "outline-variant": "#c8c5ca", "on-error": "#ffffff", "background": "#fbf8fc", "surface-tint": "#5f5e60", "secondary-fixed": "#ffd9e3", "surface-container-highest": "#e4e1e6", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "surface-bright": "#fbf8fc", "surface-container-low": "#f6f2f7", "on-tertiary-fixed": "#211b00", "on-secondary": "#ffffff", "secondary-container": "#e10080", "inverse-on-surface": "#f3f0f4", "inverse-primary": "#c8c6c8", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#524600", "surface-container-high": "#eae7eb", "primary": "#000000", "outline": "#78767b", "on-surface-variant": "#47464a", "on-secondary-container": "#fffbff", "primary-fixed-dim": "#c8c6c8", "surface": "#fbf8fc", "primary-container": "#1c1b1d", "secondary": "#b40065", "on-primary-fixed-variant": "#474649", "secondary-fixed-dim": "#ffb0ca", "inverse-surface": "#303033", "tertiary-fixed": "#ffe24c", "on-secondary-fixed": "#3e001f", "on-secondary-fixed-variant": "#8d004e", "error": "#ba1a1a", "tertiary-fixed-dim": "#e2c62d", "on-primary": "#ffffff", "on-background": "#1b1b1e", "on-primary-fixed": "#1c1b1d" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-lg": "1.5rem", "margin": "1.5rem", "margin-sm": "1rem", "space-xl": "2.5rem", "margin-lg": "4rem", "gutter-sm": "1rem", "space-md": "1rem", "gutter-lg": "2rem", "space-xs": "0.25rem", "gutter": "1.5rem" }, "fontFamily": { "headline-lg-mobile": ["Syne"], "body-lg": ["Outfit"], "body-sm": ["Outfit"], "label-md": ["Outfit"], "headline-md": ["Syne"], "label-sm": ["Outfit"], "label-lg": ["Outfit"], "display-xl": ["Syne"], "headline-lg": ["Syne"], "display-xl-mobile": ["Syne"], "body-md": ["Outfit"], "headline-sm": ["Syne"] }, "fontSize": { "headline-lg-mobile": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }], "headline-md": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "600" }], "display-xl": ["64px", { "lineHeight": "68px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-lg": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-xl-mobile": ["40px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }] } } } };</script></head><body class="min-h-screen bg-gradient-to-br from-pink-300 via-yellow-200 to-white text-on-surface font-body-md text-body-md antialiased selection:bg-secondary selection:text-on-secondary"><header class="fixed top-0 left-0 w-full z-50 bg-white/50 backdrop-blur-xl border-b border-white/60 shadow-[0_4px_24px_rgba(0,0,0,0.03)]"><div class="h-20 w-full px-margin-sm md:px-margin lg:px-margin-lg flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md shrink-0"><img alt="AURA Kicks Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB2OniA1hdccQy4kKiT_IvXDiB2YZvsIMvat21tpgBH8eaeBDtiPmB4P_4ehOHbxeh6LYB7e5TF7zcI8LgPCO1Z1U-MuBJoj_NkysJtUQ1e_hmUbS0OOqpk0SL2wMyc2vborYC-e6xaUorNnlCqOyKjLBqk3YshDoNjcrTvWbLTkp1DNHdpMzKC3yncBm7zzsewEhx3Z-eD7oTevLTtGNEpbdrqkzGRSR5IR4gJgBuYGiRSX0tSqv0ag"/><a class="flex items-center gap-space-xs" data-path="explore-drops" href="#"><span class="font-headline-sm text-headline-sm tracking-tight text-primary uppercase">AURA KICKS</span><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span></a></div><div class="hidden md:flex flex-1 max-w-md mx-gutter"><div class="w-full flex items-center bg-white/70 backdrop-blur-md rounded-full px-space-md py-space-xs border border-white/80 shadow-[0_2px_8px_rgba(0,0,0,0.02)] focus-within:border-primary focus-within:ring-2 focus-within:ring-secondary/20 transition-all"><span class="material-symbols-outlined text-outline text-[20px] mr-space-xs select-none">search</span><input class="w-full bg-transparent border-none outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline" placeholder="Search silhouette, colorway, drop..." type="text"/></div></div><div class="flex items-center gap-gutter shrink-0"><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary text-on-primary font-label-md text-label-md rounded-full px-space-md py-space-xs shadow-[0_10px_24px_-6px_rgba(9,9,11,0.35)]"><a aria-current="page" class="transition-all bg-primary text-on-primary font-label-md text-label-md rounded-full px-space-md py-space-xs shadow-[0_10px_24px_-6px_rgba(9,9,11,0.35)]" data-path="explore-drops" href="#">Explore</a><a class="px-space-md py-space-xs font-label-md text-label-md rounded-full text-on-surface-variant hover:text-on-surface hover:bg-white/60 transition-all" data-path="new-releases" href="#">Releases</a><a class="px-space-md py-space-xs font-label-md text-label-md rounded-full text-on-surface-variant hover:text-on-surface hover:bg-white/60 transition-all" data-path="hyper-collabs" href="#">Collabs</a><a class="px-space-md py-space-xs font-label-md text-label-md rounded-full text-on-surface-variant hover:text-on-surface hover:bg-white/60 transition-all" data-path="vault-archives" href="#">The Vault</a></nav><div class="flex items-center gap-space-sm"><a class="w-10 h-10 rounded-full bg-white/70 backdrop-blur-md border border-white/80 flex items-center justify-center text-on-surface-variant hover:text-secondary hover:bg-white transition-all shadow-[0_2px_6px_rgba(0,0,0,0.03)]" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[20px]">favorite</span></a><a class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-[0_10px_24px_-6px_rgba(9,9,11,0.35)] hover:bg-primary-container transition-all" data-path="cart" href="#"><span class="material-symbols-outlined text-[18px]">shopping_bag</span><span>Cart</span><span class="px-1.5 py-0.5 rounded-full bg-secondary text-on-secondary text-[11px] font-bold leading-none">3</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 relative"><div class="flex flex-col w-full">
+<!-- SPLASH & HERO EXPERIENCE SECTION -->
+<section class="relative min-h-[92vh] w-full flex flex-col justify-between px-margin-sm md:px-margin lg:px-margin-lg py-space-xl overflow-hidden">
+<!-- Ambient Luminous Glow Orbs -->
+<div class="absolute -top-16 left-1/4 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-1/3 right-10 w-96 h-96 rounded-full bg-tertiary-fixed/30 blur-3xl pointer-events-none -z-10"></div>
+<!-- Top Metadata Track -->
+<div class="w-full flex flex-wrap items-center justify-between gap-space-sm pt-space-sm">
+<div class="inline-flex items-center gap-space-xs bg-white/70 backdrop-blur-xl px-space-md py-space-xs rounded-full shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Global Tier-0 Launch Phase</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="hidden sm:inline-flex items-center gap-space-xs bg-white/60 backdrop-blur-md px-space-md py-space-xs rounded-full shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm tracking-widest text-on-surface uppercase">Authenticated NFC Vault</span>
+</div>
+<div class="inline-flex items-center gap-space-xs bg-white/70 backdrop-blur-xl px-space-md py-space-xs rounded-full shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase">Series // 09-K</span>
+</div>
+</div>
+</div>
+<!-- Main Asymmetric Showcase Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center my-auto py-space-md">
+<!-- Left Editorial Column -->
+<div class="lg:col-span-6 flex flex-col gap-space-md z-10">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest">
+            Aura Zero-1 // Next-Gen Cushioning
+          </span>
+<span class="px-space-sm py-space-xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase font-bold">
+            DROP 01
+          </span>
+</div>
+<h1 class="font-display-xl text-display-xl text-on-surface uppercase tracking-tight">
+          Step into the <br/>
+<span class="text-secondary drop-shadow-sm">Future</span> of Air
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+          Engineered for velocity, sculpted for the streets. Experience kinetic energy return enveloped in ultra-lightweight translucent mesh and hyper-tuned nitrogen soles.
+        </p>
+<!-- CTA Cluster -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<a class="inline-flex items-center gap-space-sm px-space-xl py-space-md rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-xl hover:shadow-2xl hover:scale-[1.02] active:scale-95 transition-all" href="#catalog">
+<span>Explore Collection</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<button class="inline-flex items-center gap-space-sm px-space-lg py-space-md rounded-full bg-white/75 backdrop-blur-xl text-on-surface font-label-lg text-label-lg shadow-sm hover:bg-white hover:scale-[1.02] active:scale-95 transition-all" id="film-toggle">
+<span class="w-7 h-7 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</span>
+<span>Watch Launch Film</span>
+</button>
+</div>
+<!-- Trust Badges Bar -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-lg">
+<div class="flex items-center gap-space-xs bg-white/60 backdrop-blur-md px-space-md py-space-xs rounded-full shadow-sm">
+<span class="text-on-tertiary-container font-bold text-[14px]">★ 4.9/5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rider Rating</span>
+</div>
+<div class="flex items-center gap-space-xs bg-white/60 backdrop-blur-md px-space-md py-space-xs rounded-full shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">eco</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Carbon-Neutral Sole</span>
+</div>
+<div class="flex items-center gap-space-xs bg-white/60 backdrop-blur-md px-space-md py-space-xs rounded-full shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Limited Drop: 500 Pairs</span>
+</div>
+</div>
+</div>
+<!-- Right Floating 3D Sneaker Canvas -->
+<div class="lg:col-span-6 relative flex items-center justify-center -mt-6 lg:mt-0">
+<!-- Diffuse Backlight -->
+<div class="absolute w-[460px] h-[460px] rounded-full bg-gradient-to-tr from-secondary-container/30 via-tertiary-fixed/30 to-white/70 blur-2xl pointer-events-none scale-95 transition-transform duration-700"></div>
+<!-- Specular Glass Ring -->
+<div class="absolute w-[360px] h-[360px] sm:w-[440px] sm:h-[440px] rounded-full bg-white/20 backdrop-blur-md pointer-events-none animate-spin" style="animation-duration: 40s;"></div>
+<!-- Sneaker Visual Hero -->
+<div class="relative w-full max-w-lg aspect-square flex items-center justify-center p-space-md">
+<img alt="Volt-Flow Aether Next-Gen Sneaker" class="w-full h-full object-contain filter drop-shadow-[0_28px_40px_rgba(225,0,128,0.22)] transform hover:rotate-2 hover:scale-105 transition-all duration-500 select-none cursor-pointer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbYrLw-3h-cmUcEfR4mA9C9AwHg5qDguwH7vzJ8FcOdVNXk2EB9YSTxy-WrjhRBQ-IxnaXjYIF8ZIZW9AlBSZEHF0JnmIx2y-DCL6BaNYyRS_TIevvvupjUCPRQ7YD32jZDMq7K2H2u3hYvlJn-tVdfEfrKprOv-mViGhKXkZDf5QxkjCJ-I1jMqlUZL09wZH9XfAAVrRmccJTsJmazT-iMnOsVXrhiXOO6cT36uOE7fWh0-EHsn_xXA"/>
+<!-- Floating Interactive Callout Badges -->
+<div class="absolute top-12 left-4 bg-white/80 backdrop-blur-xl px-space-md py-space-xs rounded-2xl shadow-lg flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">bolt</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface">Volt-Flow™ Unit</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant leading-none">Instant Kinetic Bounce</span>
+</div>
+</div>
+<div class="absolute bottom-8 right-6 bg-white/80 backdrop-blur-xl px-space-md py-space-xs rounded-2xl shadow-lg flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">tune</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface">Custom Lockdown</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant leading-none">Aero Strapping Tech</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Telemetry Ticker -->
+<div class="w-full bg-white/40 backdrop-blur-xl rounded-2xl p-space-md flex flex-wrap items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold tracking-widest">LIVE DROP RADAR</span>
+<div class="h-4 w-px bg-on-surface-variant/20 hidden sm:block"></div>
+<p class="font-body-sm text-body-sm text-on-surface truncate">
+          London, UK (0.4m ago) — User @solesmith copped <span class="font-semibold text-primary">Cyber Volt 01 (US 10.5)</span>
+</p>
+</div>
+<a class="flex items-center gap-space-xs font-label-sm text-label-sm uppercase font-bold text-primary hover:text-secondary transition-colors" href="#catalog">
+<span>View Stock Status</span>
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+</a>
+</div>
+</section>
+<!-- STOREFRONT SECTION: LATEST RELEASES & ICONS -->
+<section class="w-full px-margin-sm md:px-margin lg:px-margin-lg py-space-xl flex flex-col gap-space-lg" id="catalog">
+<!-- Section Header Block -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Archived &amp; Live Vault</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase">
+          Latest Releases &amp; Icons
+        </h2>
+</div>
+<!-- Controls: Stock alert & Currency selector -->
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-white/70 backdrop-blur-xl shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">stream</span>
+<span class="font-label-sm text-label-sm uppercase text-on-surface">364 In Stock</span>
+</div>
+<div class="flex items-center rounded-full bg-white/70 backdrop-blur-xl p-0.5 shadow-sm text-on-surface font-label-sm text-label-sm">
+<button class="px-space-md py-space-xs rounded-full bg-primary text-on-primary font-bold">USD ($)</button>
+<button class="px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface transition-colors">EUR (€)</button>
+<button class="px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface transition-colors">GBP (£)</button>
+</div>
+</div>
+</div>
+<!-- Category Filter Bar (Pill System) -->
+<div class="w-full overflow-x-auto pb-space-xs flex items-center gap-space-sm scrollbar-none" id="category-bar">
+<button class="filter-pill whitespace-nowrap px-space-lg py-space-xs rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-md transition-all" data-category="all">
+        All Drops (24)
+      </button>
+<button class="filter-pill whitespace-nowrap px-space-lg py-space-xs rounded-full bg-white/70 backdrop-blur-xl text-on-surface-variant hover:text-on-surface hover:bg-white font-label-md text-label-md shadow-sm transition-all" data-category="running">
+        Running &amp; Velocity
+      </button>
+<button class="filter-pill whitespace-nowrap px-space-lg py-space-xs rounded-full bg-white/70 backdrop-blur-xl text-on-surface-variant hover:text-on-surface hover:bg-white font-label-md text-label-md shadow-sm transition-all" data-category="streetwear">
+        Streetwear &amp; Lifestyle
+      </button>
+<button class="filter-pill whitespace-nowrap px-space-lg py-space-xs rounded-full bg-white/70 backdrop-blur-xl text-on-surface-variant hover:text-on-surface hover:bg-white font-label-md text-label-md shadow-sm transition-all" data-category="collabs">
+        Hyper-Collabs
+      </button>
+<button class="filter-pill whitespace-nowrap px-space-lg py-space-xs rounded-full bg-white/70 backdrop-blur-xl text-on-surface-variant hover:text-on-surface hover:bg-white font-label-md text-label-md shadow-sm transition-all" data-category="vault">
+        The Vault (Archive)
+      </button>
+</div>
+<!-- Product Grid System (4 Column Bespoke Layout) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-lg pt-space-md">
+<!-- CARD 1: Cyber Volt 01 -->
+<div class="product-card group relative flex flex-col justify-between bg-white/55 backdrop-blur-xl rounded-3xl p-space-md shadow-sm hover:shadow-2xl hover:bg-white/80 transition-all duration-300">
+<!-- Top Card Deck: Badges & Wishlist -->
+<div class="flex items-center justify-between w-full z-10">
+<span class="px-space-md py-space-xs rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+            Tier-0 Drop
+          </span>
+<button class="wishlist-btn w-9 h-9 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-secondary hover:bg-white transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<!-- Sneaker Canvas Floating Area -->
+<div class="relative w-full h-56 flex items-center justify-center my-space-sm overflow-visible">
+<div class="absolute inset-0 bg-gradient-to-t from-secondary-container/10 to-transparent rounded-2xl -z-10 group-hover:scale-105 transition-all"></div>
+<img alt="Aura Cyber Volt 01" class="w-full h-full object-contain filter drop-shadow-[0_16px_24px_rgba(0,0,0,0.12)] group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-300 select-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbYrLw-3h-cmUcEfR4mA9C9AwHg5qDguwH7vzJ8FcOdVNXk2EB9YSTxy-WrjhRBQ-IxnaXjYIF8ZIZW9AlBSZEHF0JnmIx2y-DCL6BaNYyRS_TIevvvupjUCPRQ7YD32jZDMq7K2H2u3hYvlJn-tVdfEfrKprOv-mViGhKXkZDf5QxkjCJ-I1jMqlUZL09wZH9XfAAVrRmccJTsJmazT-iMnOsVXrhiXOO6cT36uOE7fWh0-EHsn_xXA"/>
+</div>
+<!-- Card Bottom Content Deck -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Hyper Performance</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">285g // Aero</span>
+</div>
+<div class="flex items-baseline justify-between">
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight group-hover:text-primary transition-colors">
+              CYBER VOLT 01
+            </h3>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">$240</span>
+</div>
+<!-- Sizing Matrix (Quick Pills) -->
+<div class="flex items-center gap-1.5 py-space-xs">
+<button class="size-pill w-8 h-8 rounded-full bg-white/70 text-on-surface font-label-sm text-label-sm hover:bg-primary hover:text-on-primary transition-all">8</button>
+<button class="size-pill w-8 h-8 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">9.5</button>
+<button class="size-pill w-8 h-8 rounded-full bg-white/70 text-on-surface font-label-sm text-label-sm hover:bg-primary hover:text-on-primary transition-all">10</button>
+<button class="size-pill w-8 h-8 rounded-full bg-white/70 text-on-surface font-label-sm text-label-sm hover:bg-primary hover:text-on-primary transition-all">11</button>
+</div>
+<!-- Bottom Action Deck -->
+<div class="flex items-center justify-between pt-space-xs border-t border-white/60">
+<span class="font-body-sm text-[12px] text-on-surface-variant">Kinetic Flow Foam</span>
+<button class="add-to-cart-btn w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center hover:bg-secondary hover:scale-105 active:scale-95 transition-all shadow-md">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 2: Solar Peach Runner X -->
+<div class="product-card group relative flex flex-col justify-between bg-white/55 backdrop-blur-xl rounded-3xl p-space-md shadow-sm hover:shadow-2xl hover:bg-white/80 transition-all duration-300">
+<div class="flex items-center justify-between w-full z-10">
+<span class="px-space-md py-space-xs rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase font-bold tracking-wider">
+            Air-Gel Pod
+          </span>
+<button class="wishlist-btn w-9 h-9 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-secondary hover:bg-white transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="relative w-full h-56 flex items-center justify-center my-space-sm overflow-visible">
+<div class="absolute inset-0 bg-gradient-to-t from-yellow-200/20 to-transparent rounded-2xl -z-10 group-hover:scale-105 transition-all"></div>
+<img alt="Solar Peach Runner X" class="w-full h-full object-contain filter drop-shadow-[0_16px_24px_rgba(0,0,0,0.12)] group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-300 select-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvdbgOXUtMv1qdE9DhLPEz3EaiMwdqcvY5PtvLmr45axHS7LQJ1wOTOndo6rPI-UBaEgGxmPxaWHIQNh8amBX46MmzPhmXcGhw-lr7tnmU38v2ZjGN1FsaCXb9qIoZ5eM-PxFUdj9WfjVD8Kda9DvWi5qP5FN6DUP78ABID2PLK5neVVmOrn9R_Lj5LbeU1LFtiZPXMYKhV6-YfuhoSWizZeJYL5Exuog-jaXT-UQEVYH7G4C1dNuyVg"/>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-tertiary-container font-bold">Distance Running</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Solar Tint 02</span>
+</div>
+<div class="flex items-baseline justify-between">
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight group-hover:text-primary transition-colors">
+              SOLAR PEACH RUNNER
+            </h3>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">$195</span>
+</div>
+<!-- Colorway Pill Indicators -->
+<div class="flex items-center gap-2 py-space-xs">
+<span class="w-5 h-5 rounded-full bg-orange-300 shadow-sm ring-2 ring-primary ring-offset-1"></span>
+<span class="w-5 h-5 rounded-full bg-yellow-200 shadow-sm cursor-pointer"></span>
+<span class="w-5 h-5 rounded-full bg-pink-300 shadow-sm cursor-pointer"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant ml-2">+2 Shades</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-white/60">
+<span class="font-body-sm text-[12px] text-on-surface-variant">Cloudweave Upper</span>
+<button class="add-to-cart-btn w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center hover:bg-secondary hover:scale-105 active:scale-95 transition-all shadow-md">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 3: Retro Futura Chunky -->
+<div class="product-card group relative flex flex-col justify-between bg-white/55 backdrop-blur-xl rounded-3xl p-space-md shadow-sm hover:shadow-2xl hover:bg-white/80 transition-all duration-300">
+<div class="flex items-center justify-between w-full z-10">
+<span class="px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+            Archive Edition
+          </span>
+<button class="wishlist-btn w-9 h-9 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-secondary hover:bg-white transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="relative w-full h-56 flex items-center justify-center my-space-sm overflow-visible">
+<div class="absolute inset-0 bg-gradient-to-t from-purple-300/20 to-transparent rounded-2xl -z-10 group-hover:scale-105 transition-all"></div>
+<img alt="Retro Futura Chunky" class="w-full h-full object-contain filter drop-shadow-[0_16px_24px_rgba(0,0,0,0.12)] group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-300 select-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgngVzQmr-ns_cLop_laoRNcemepaPl34KZ9iJxmLMBQ0rqgLWX7hzctI4Nd3Cv9Sz31ZR6RSVT5UQxGerGNZLpElcA_weYcLQUh6o9VCpZLs12jRFFsb5-kPAj0LTJG9hU61VabRx0RRj7UTUbq-yHgwb14itBhuEWl_-0z4xHIm7C8oKkAPzKfkH7GEAgBJEZIcBDbVX32WRxgDB_vlpOEL3tbPBqS1kaaCfEhL76pzRdTE2ddezlg"/>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Lifestyle Streetwear</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lilac Cream</span>
+</div>
+<div class="flex items-baseline justify-between">
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight group-hover:text-primary transition-colors">
+              RETRO FUTURA CHUNKY
+            </h3>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">$210</span>
+</div>
+<div class="flex items-center gap-1.5 py-space-xs">
+<button class="size-pill w-8 h-8 rounded-full bg-white/70 text-on-surface font-label-sm text-label-sm hover:bg-primary hover:text-on-primary transition-all">7.5</button>
+<button class="size-pill w-8 h-8 rounded-full bg-white/70 text-on-surface font-label-sm text-label-sm hover:bg-primary hover:text-on-primary transition-all">8.5</button>
+<button class="size-pill w-8 h-8 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">9.5</button>
+<button class="size-pill w-8 h-8 rounded-full bg-white/70 text-on-surface font-label-sm text-label-sm hover:bg-primary hover:text-on-primary transition-all">11</button>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-white/60">
+<span class="font-body-sm text-[12px] text-on-surface-variant">Dual-Density Gum Sole</span>
+<button class="add-to-cart-btn w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center hover:bg-secondary hover:scale-105 active:scale-95 transition-all shadow-md">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 4: Vortex Aether Low -->
+<div class="product-card group relative flex flex-col justify-between bg-white/55 backdrop-blur-xl rounded-3xl p-space-md shadow-sm hover:shadow-2xl hover:bg-white/80 transition-all duration-300">
+<div class="flex items-center justify-between w-full z-10">
+<span class="px-space-md py-space-xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase font-bold tracking-wider">
+            Trending Now
+          </span>
+<button class="wishlist-btn w-9 h-9 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center text-on-surface-variant hover:text-secondary hover:bg-white transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="relative w-full h-56 flex items-center justify-center my-space-sm overflow-visible">
+<div class="absolute inset-0 bg-gradient-to-t from-pink-400/20 to-transparent rounded-2xl -z-10 group-hover:scale-105 transition-all"></div>
+<img class="w-full h-full object-contain filter drop-shadow-[0_16px_24px_rgba(0,0,0,0.12)] group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-300 select-none" data-alt="Futuristic low-top avant-garde sneaker rendered in sleek iridescent pearl white, vivid neon magenta accents, translucent ice sole, dramatic floating perspective studio product photography on clean minimalist studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxl46PuX9y2-ZJkmzobkmMYyHZ0KI_KmYFByVEGAl8H47-sLhljiQjBRt67oLud7Wt8eAEFiLr6HDp5-o6Opnuum2sC-LAhuHvr78NhmcoPLQYyL0WB5XhDlzW4X198B9_hbnRo6REu7YOIOacR0ql1dh1dLOY2NXHho1U_IzAKEmTTP_6OiBvBq_K2R72fu-P6CH5aHvldpK-ab1U78EGxToOcp6nq_zZ4Os29n0rQGWt9vg_yiP6gg"/>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Cross-Training</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Prism White</span>
+</div>
+<div class="flex items-baseline justify-between">
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight group-hover:text-primary transition-colors">
+              VORTEX AETHER LOW
+            </h3>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">$225</span>
+</div>
+<div class="flex items-center gap-1.5 py-space-xs">
+<button class="size-pill w-8 h-8 rounded-full bg-white/70 text-on-surface font-label-sm text-label-sm hover:bg-primary hover:text-on-primary transition-all">8</button>
+<button class="size-pill w-8 h-8 rounded-full bg-white/70 text-on-surface font-label-sm text-label-sm hover:bg-primary hover:text-on-primary transition-all">9</button>
+<button class="size-pill w-8 h-8 rounded-full bg-white/70 text-on-surface font-label-sm text-label-sm hover:bg-primary hover:text-on-primary transition-all">10</button>
+<button class="size-pill w-8 h-8 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">12</button>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-white/60">
+<span class="font-body-sm text-[12px] text-on-surface-variant">Reflective Bio-Nylon</span>
+<button class="add-to-cart-btn w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center hover:bg-secondary hover:scale-105 active:scale-95 transition-all shadow-md">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- IMMERSIVE BENTO FEATURE & TECHNOLOGY BREAKDOWN -->
+<section class="w-full px-margin-sm md:px-margin lg:px-margin-lg py-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg">
+<!-- Feature 1: Craft & Tech Matrix -->
+<div class="lg:col-span-8 bg-white/60 backdrop-blur-2xl rounded-3xl p-space-xl shadow-sm flex flex-col justify-between gap-space-lg relative overflow-hidden">
+<div class="flex flex-col gap-space-xs z-10">
+<span class="font-label-sm text-label-sm uppercase font-bold text-secondary tracking-widest">PROPULSION ARCHITECTURE</span>
+<h3 class="font-headline-lg text-headline-lg uppercase text-on-surface">
+            KINETIC RETURN SYSTEM 4.0
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+            Every step compresses supercritical nitrogen air pockets, rebounding 84% of kinetic energy forward. Engineered alongside world-class marathoners and urban parkour athletes.
+          </p>
+</div>
+<!-- Inline SVG Performance Energy Return Curve Chart -->
+<div class="w-full bg-white/70 backdrop-blur-md rounded-2xl p-space-md z-10 shadow-inner">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-on-surface">ENERGY DISPERSION PROFILE (J/KG)</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">+18.4% GAIN</span>
+</div>
+<svg class="w-full h-24 text-secondary" fill="none" preserveaspectratio="none" viewbox="0 0 500 100">
+<defs>
+<lineargradient id="chartGlow" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="currentColor" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="currentColor" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<path d="M0,85 C70,80 120,40 190,45 C260,50 320,10 400,15 C440,18 470,8 500,4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"></path>
+<path d="M0,85 C70,80 120,40 190,45 C260,50 320,10 400,15 C440,18 470,8 500,4 L500,100 L0,100 Z" fill="url(#chartGlow)"></path>
+<circle cx="190" cy="45" fill="#000000" r="4"></circle>
+<circle cx="400" cy="15" fill="#000000" r="4"></circle>
+<circle cx="500" cy="4" fill="#e10080" r="5"></circle>
+</svg>
+</div>
+<div class="grid grid-cols-3 gap-space-md z-10 pt-space-xs">
+<div>
+<span class="font-display-xl text-headline-lg font-bold text-primary">84%</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kinetic Rebound</p>
+</div>
+<div>
+<span class="font-display-xl text-headline-lg font-bold text-primary">210g</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Carbon-Lite Shell</p>
+</div>
+<div>
+<span class="font-display-xl text-headline-lg font-bold text-secondary">0.02s</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Impact Dissipation</p>
+</div>
+</div>
+</div>
+<!-- Feature 2: High-Collab Showcase Tile -->
+<div class="lg:col-span-4 bg-primary text-on-primary rounded-3xl p-space-xl shadow-xl flex flex-col justify-between gap-space-lg relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="px-space-md py-space-xs rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm uppercase font-bold">
+            SPECIAL ACCESS
+          </span>
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">token</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-md text-headline-md uppercase tracking-tight text-white">
+            JOIN THE DROP COLLECTIVE
+          </h3>
+<p class="font-body-sm text-body-sm text-surface-container-highest">
+            Get whitelisted for 15-minute priority early access before public shock drops go live. Zero bots, pure passion.
+          </p>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-sm">
+<div class="flex items-center gap-space-xs bg-primary-container px-space-md py-space-sm rounded-full">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">notifications_active</span>
+<input class="bg-transparent text-white font-body-sm text-body-sm outline-none w-full placeholder:text-outline" placeholder="SMS / Mobile alert number" type="text"/>
+</div>
+<button class="w-full py-space-md rounded-full bg-white text-primary font-label-md text-label-md uppercase font-bold tracking-wider hover:bg-secondary-fixed transition-all active:scale-98">
+            Request Priority Pass
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- FLOATING QUICK-CART PEAK DOCK (Micro-Interaction) -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 bg-primary/95 backdrop-blur-2xl text-on-primary px-space-lg py-space-sm rounded-full shadow-[0_20px_40px_rgba(0,0,0,0.35)] flex items-center gap-space-lg border border-white/20 transition-all duration-300" id="quick-cart-bar">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center font-bold text-white text-[13px]">
+        3
+      </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold uppercase leading-none">Cart Reserved</span>
+<span class="font-body-sm text-[11px] text-white/70">Expires in 08:42</span>
+</div>
+</div>
+<div class="h-6 w-px bg-white/20"></div>
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm font-bold text-white">$645.00</span>
+<button class="px-space-md py-space-xs rounded-full bg-white text-primary font-label-md text-label-md uppercase font-bold hover:bg-secondary-fixed transition-all flex items-center gap-space-xs">
+<span>Checkout</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- INTERACTIVE TOAST NOTIFICATION -->
+<div class="fixed top-24 right-6 z-50 transform translate-y-[-120%] opacity-0 bg-white/95 backdrop-blur-2xl px-space-lg py-space-md rounded-2xl shadow-2xl flex items-center gap-space-sm transition-all duration-300 border border-white" id="toast">
+<span class="material-symbols-outlined text-secondary text-[24px]">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-primary">Added to Footwear Bag</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="toast-item">Sneaker allocated to your session</span>
+</div>
+</div>
+<!-- CLIENT-SIDE MICRO-INTERACTIONS -->
+<script>
+    // Filter Pills interaction
+    const filterPills = document.querySelectorAll('.filter-pill');
+    filterPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        filterPills.forEach(p => {
+          p.classList.remove('bg-primary', 'text-on-primary', 'shadow-md');
+          p.classList.add('bg-white/70', 'text-on-surface-variant', 'shadow-sm');
+        });
+        pill.classList.remove('bg-white/70', 'text-on-surface-variant', 'shadow-sm');
+        pill.classList.add('bg-primary', 'text-on-primary', 'shadow-md');
+      });
+    });
+
+    // Sizing Matrix Selection
+    const sizePills = document.querySelectorAll('.size-pill');
+    sizePills.forEach(pill => {
+      pill.addEventListener('click', (e) => {
+        const parent = e.target.closest('.product-card');
+        if (parent) {
+          parent.querySelectorAll('.size-pill').forEach(sp => {
+            sp.classList.remove('bg-primary', 'text-on-primary');
+            sp.classList.add('bg-white/70', 'text-on-surface');
+          });
+          e.target.classList.remove('bg-white/70', 'text-on-surface');
+          e.target.classList.add('bg-primary', 'text-on-primary');
+        }
+      });
+    });
+
+    // Wishlist Toggle
+    const wishlistBtns = document.querySelectorAll('.wishlist-btn');
+    wishlistBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const icon = btn.querySelector('.material-symbols-outlined');
+        if (icon.style.fontVariationSettings.includes('FILL 1')) {
+          icon.style.fontVariationSettings = "'FILL' 0";
+          btn.classList.remove('text-secondary');
+        } else {
+          icon.style.fontVariationSettings = "'FILL' 1";
+          btn.classList.add('text-secondary');
+        }
+      });
+    });
+
+    // Add to Cart Toast trigger
+    const toast = document.getElementById('toast');
+    const toastItem = document.getElementById('toast-item');
+    const addToCartBtns = document.querySelectorAll('.add-to-cart-btn');
+
+    addToCartBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const card = e.target.closest('.product-card');
+        const title = card ? card.querySelector('h3').innerText : 'Artifact';
+        toastItem.innerText = title + ' reserved in size US 9.5';
+        toast.classList.remove('translate-y-[-120%]', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+
+        setTimeout(() => {
+          toast.classList.add('translate-y-[-120%]', 'opacity-0');
+          toast.classList.remove('translate-y-0', 'opacity-100');
+        }, 3200);
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-white/60 backdrop-blur-2xl border-t border-white/80 mt-space-xl"><div class="w-full px-margin-sm md:px-margin lg:px-margin-lg py-margin-lg"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-lg"><div class="md:col-span-5 flex flex-col gap-space-md"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md tracking-tight uppercase text-primary">AURA KICKS</span><span class="px-space-xs py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm tracking-wider uppercase">Hyperdrop</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Engineering the boundary between cushioned street ergonomics and digital luxury. Limited silhouetted artifacts crafted for collectors worldwide.</p><div class="flex items-center gap-space-sm mt-space-sm"><div class="flex items-center rounded-full bg-white/80 backdrop-blur-md p-1 border border-white max-w-xs shadow-[0_2px_12px_rgba(0,0,0,0.03)] focus-within:border-primary"><input class="bg-transparent px-space-md py-space-xs font-body-sm text-body-sm text-on-surface outline-none w-full placeholder:text-outline" placeholder="Enter your drop email..." type="email"/><button class="px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider hover:bg-primary-container transition-colors shrink-0">Join</button></div></div></div><div class="md:col-span-2 md:col-start-7 flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary uppercase">Releases</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer transition-colors">Spring 2025 Tier-0</li><li class="hover:text-on-surface cursor-pointer transition-colors">Volt Hyper-Air</li><li class="hover:text-on-surface cursor-pointer transition-colors">Prism Kinetic 90</li><li class="hover:text-on-surface cursor-pointer transition-colors">Restock Radar</li></ul></div><div class="md:col-span-2 flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary uppercase">Ecosystem</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer transition-colors">Proof of Origin</li><li class="hover:text-on-surface cursor-pointer transition-colors">Raffle Rules</li><li class="hover:text-on-surface cursor-pointer transition-colors">Care &amp; Restoration</li><li class="hover:text-on-surface cursor-pointer transition-colors">Collector Guild</li></ul></div><div class="md:col-span-2 flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary uppercase">Support</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-on-surface cursor-pointer transition-colors">Track Order</li><li class="hover:text-on-surface cursor-pointer transition-colors">Authentication</li><li class="hover:text-on-surface cursor-pointer transition-colors">Sizing Guide</li><li class="hover:text-on-surface cursor-pointer transition-colors">Contact HQ</li></ul></div></div><div class="mt-margin-lg pt-space-lg border-t border-surface-variant/40 flex flex-col md:flex-row items-center justify-between gap-space-md font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider"><span>© 2025 AURA KICKS LABS. ALL ARTIFACTS RESERVED.</span><div class="flex items-center gap-space-lg"><span>Privacy Protocol</span><span>Terms of Drop</span><span>Security Audit</span></div></div></div></footer></body></html>
